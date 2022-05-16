@@ -23,8 +23,8 @@ class FlyableBird extends Bird {
 }
 
 const penguin = new Bird('ペンギン');
-penguin.chirp();
-Bird.explain('カラス');
+penguin.chirp();  // ペンギンが鳴きました
+Bird.explain('カラス');  // カラスは翼があって卵を生みます
 
 const hawk = new FlyableBird('タカ');
-hawk.fly();
+hawk.fly();  // タカが飛びました

@@ -1,3 +1,4 @@
+// bird-class.js のクラス構文をプロトタイプベースで書き直し
 function Bird(name) {
   this.name = name;
   this.chirp = function () {
