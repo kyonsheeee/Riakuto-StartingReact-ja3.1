@@ -4,6 +4,6 @@ const copy = Object.assign({}, original);
 console.log(copy);
 console.log(copy === original);
 
-const assigned = Object.assign(original, { c: 10, d: 50 }, { d: 100 });
+const assigned = Object.assign(original, { c: 10, d: 50 }, { d: 100 });  // Object.assign() は破壊的メソッド
 console.log(assigned);
 console.log(original);
