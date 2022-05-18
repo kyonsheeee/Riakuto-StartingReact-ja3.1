@@ -7,7 +7,7 @@ class Person {
     const doIt = function () {
       console.log(`Hi, I'm ${this.name}`);
     };
-    const bindedDoIt = doIt.bind(this);
+    const bindedDoIt = doIt.bind(this);  // 関数に this を束縛
     bindedDoIt();
   }
 
@@ -15,11 +15,11 @@ class Person {
     const doIt = function () {
       console.log(`Hi, I'm ${this.name}`);
     };
-    doIt.call(this);
+    doIt.call(this);  // this を指定して実行
   }
 
   greet3() {
-    const _this = this;
+    const _this = this;  // 変数 _this に値を移し替える
     const doIt = function () {
       console.log(`Hi, I'm ${_this.name}`);
     };
@@ -27,13 +27,13 @@ class Person {
   }
 
   greet4() {
-    const doIt = () => {
+    const doIt = () => {  // アロー関数式で定義
       console.log(`Hi, I'm ${this.name}`);
     };
     doIt();
   }
 
-  greet5 = () => {
+  greet5 = () => {  // メソッド自身もアロー関数式で定義
     const doIt = () => {
       console.log(`Hi, I'm ${this.name}`);
     };
