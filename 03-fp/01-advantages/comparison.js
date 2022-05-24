@@ -1,4 +1,4 @@
-// Procedural programming
+// Procedural programming 手続き型
 {
   const octuples = [];
 
@@ -11,7 +11,7 @@
   console.log(octuples);
 }
 
-// Functional programming
+// Functional programming 関数型
 {
   const range = (start, end) => [...new Array(end - start).keys()].map((n) => n + start);
   console.log(range(1, 101).filter((n) => n % 8 === 0));
