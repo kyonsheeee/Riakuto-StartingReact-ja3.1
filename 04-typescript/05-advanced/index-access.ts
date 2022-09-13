@@ -4,5 +4,16 @@ const permissions = {
   x: 0b001 as const,
 };
 
+/*
+const permissions = {
+  r: 0b100,
+  w: 0b010,
+  x: 0b001,
+} as const
+ */
+
 type PermsChar = keyof typeof permissions;
 type PermsNum = typeof permissions[PermsChar];
+
+const species = ['rabbit', 'bear', 'fox', 'dog'] as const;
+type Species = typeof species[number];  // 'rabbit' | 'bear' | 'fox' | 'dog'

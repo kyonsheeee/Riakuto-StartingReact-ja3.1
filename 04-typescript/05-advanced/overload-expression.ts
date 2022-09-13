@@ -30,7 +30,7 @@ const transform: Transform = (item?: Brooch | Compact): void => {
   } else if (item instanceof CrisisCompact) {
     console.log('Moon crisis🏆, make up!');
   } else if (!item) {
-    console.log('Moon prisim power🌙, make up!');
+    console.log('Moon prism power🌙, make up!');
   } else {
     console.log('Item is fake...😖');
   }
